@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEDD5C0D2C6148D000F4E222 /* NavanTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C0C2C6148D000F4E222 /* NavanTestApp.swift */; };
+		CEDD5C0F2C6148D000F4E222 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C0E2C6148D000F4E222 /* ContentView.swift */; };
+		CEDD5C112C6148D000F4E222 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C102C6148D000F4E222 /* Item.swift */; };
+		CEDD5C132C6148D400F4E222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD5C122C6148D400F4E222 /* Assets.xcassets */; };
+		CEDD5C172C6148D400F4E222 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD5C162C6148D400F4E222 /* Preview Assets.xcassets */; };
+		CEDD5C212C6148D400F4E222 /* NavanTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */; };
+		CEDD5C2B2C6148D400F4E222 /* NavanTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */; };
+		CEDD5C2D2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */; };
+		CEDD5C3F2C614BA500F4E222 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C3E2C614BA500F4E222 /* NetworkClient.swift */; };
+		CEDD5C472C614BDB00F4E222 /* DefaultNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C462C614BDB00F4E222 /* DefaultNetworkReachability.swift */; };
+		CEDD5C492C614BE700F4E222 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C482C614BE700F4E222 /* Post.swift */; };
+		CEDD5C4D2C614C1F00F4E222 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C4C2C614C1F00F4E222 /* PostViewModel.swift */; };
+		CEDD5C4F2C614C3700F4E222 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C4E2C614C3700F4E222 /* Logger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDD5C1D2C6148D400F4E222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDD5C012C6148D000F4E222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDD5C082C6148D000F4E222;
+			remoteInfo = NavanTest;
+		};
+		CEDD5C272C6148D400F4E222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDD5C012C6148D000F4E222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDD5C082C6148D000F4E222;
+			remoteInfo = NavanTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEDD5C092C6148D000F4E222 /* NavanTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavanTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDD5C0C2C6148D000F4E222 /* NavanTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestApp.swift; sourceTree = "<group>"; };
+		CEDD5C0E2C6148D000F4E222 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEDD5C102C6148D000F4E222 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CEDD5C122C6148D400F4E222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDD5C142C6148D400F4E222 /* NavanTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavanTest.entitlements; sourceTree = "<group>"; };
+		CEDD5C162C6148D400F4E222 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavanTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestTests.swift; sourceTree = "<group>"; };
+		CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavanTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestUITests.swift; sourceTree = "<group>"; };
+		CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEDD5C3E2C614BA500F4E222 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CEDD5C462C614BDB00F4E222 /* DefaultNetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkReachability.swift; sourceTree = "<group>"; };
+		CEDD5C482C614BE700F4E222 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CEDD5C4C2C614C1F00F4E222 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		CEDD5C4E2C614C3700F4E222 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDD5C062C6148D000F4E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C192C6148D400F4E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C232C6148D400F4E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEDD5C002C6148D000F4E222 = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C0B2C6148D000F4E222 /* NavanTest */,
+				CEDD5C1F2C6148D400F4E222 /* NavanTestTests */,
+				CEDD5C292C6148D400F4E222 /* NavanTestUITests */,
+				CEDD5C0A2C6148D000F4E222 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDD5C0A2C6148D000F4E222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C092C6148D000F4E222 /* NavanTest.app */,
+				CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */,
+				CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDD5C0B2C6148D000F4E222 /* NavanTest */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C3D2C614B8D00F4E222 /* Network */,
+				CEDD5C3C2C614B8400F4E222 /* Models */,
+				CEDD5C3B2C614B7C00F4E222 /* Views */,
+				CEDD5C3A2C614B7400F4E222 /* ViewModels */,
+				CEDD5C392C614B6E00F4E222 /* Utilities */,
+				CEDD5C0C2C6148D000F4E222 /* NavanTestApp.swift */,
+				CEDD5C102C6148D000F4E222 /* Item.swift */,
+				CEDD5C122C6148D400F4E222 /* Assets.xcassets */,
+				CEDD5C142C6148D400F4E222 /* NavanTest.entitlements */,
+				CEDD5C152C6148D400F4E222 /* Preview Content */,
+			);
+			path = NavanTest;
+			sourceTree = "<group>";
+		};
+		CEDD5C152C6148D400F4E222 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C162C6148D400F4E222 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEDD5C1F2C6148D400F4E222 /* NavanTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */,
+			);
+			path = NavanTestTests;
+			sourceTree = "<group>";
+		};
+		CEDD5C292C6148D400F4E222 /* NavanTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */,
+				CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */,
+			);
+			path = NavanTestUITests;
+			sourceTree = "<group>";
+		};
+		CEDD5C392C614B6E00F4E222 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C4E2C614C3700F4E222 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEDD5C3A2C614B7400F4E222 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C4C2C614C1F00F4E222 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEDD5C3B2C614B7C00F4E222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C0E2C6148D000F4E222 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEDD5C3C2C614B8400F4E222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C482C614BE700F4E222 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEDD5C3D2C614B8D00F4E222 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C3E2C614BA500F4E222 /* NetworkClient.swift */,
+				CEDD5C462C614BDB00F4E222 /* DefaultNetworkReachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDD5C082C6148D000F4E222 /* NavanTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDD5C302C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTest" */;
+			buildPhases = (
+				CEDD5C052C6148D000F4E222 /* Sources */,
+				CEDD5C062C6148D000F4E222 /* Frameworks */,
+				CEDD5C072C6148D000F4E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavanTest;
+			productName = NavanTest;
+			productReference = CEDD5C092C6148D000F4E222 /* NavanTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDD5C1B2C6148D400F4E222 /* NavanTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDD5C332C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestTests" */;
+			buildPhases = (
+				CEDD5C182C6148D400F4E222 /* Sources */,
+				CEDD5C192C6148D400F4E222 /* Frameworks */,
+				CEDD5C1A2C6148D400F4E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDD5C1E2C6148D400F4E222 /* PBXTargetDependency */,
+			);
+			name = NavanTestTests;
+			productName = NavanTestTests;
+			productReference = CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEDD5C252C6148D400F4E222 /* NavanTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDD5C362C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestUITests" */;
+			buildPhases = (
+				CEDD5C222C6148D400F4E222 /* Sources */,
+				CEDD5C232C6148D400F4E222 /* Frameworks */,
+				CEDD5C242C6148D400F4E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDD5C282C6148D400F4E222 /* PBXTargetDependency */,
+			);
+			name = NavanTestUITests;
+			productName = NavanTestUITests;
+			productReference = CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDD5C012C6148D000F4E222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CEDD5C082C6148D000F4E222 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CEDD5C1B2C6148D400F4E222 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEDD5C082C6148D000F4E222;
+					};
+					CEDD5C252C6148D400F4E222 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEDD5C082C6148D000F4E222;
+					};
+				};
+			};
+			buildConfigurationList = CEDD5C042C6148D000F4E222 /* Build configuration list for PBXProject "NavanTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDD5C002C6148D000F4E222;
+			productRefGroup = CEDD5C0A2C6148D000F4E222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDD5C082C6148D000F4E222 /* NavanTest */,
+				CEDD5C1B2C6148D400F4E222 /* NavanTestTests */,
+				CEDD5C252C6148D400F4E222 /* NavanTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDD5C072C6148D000F4E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDD5C172C6148D400F4E222 /* Preview Assets.xcassets in Resources */,
+				CEDD5C132C6148D400F4E222 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C1A2C6148D400F4E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C242C6148D400F4E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDD5C052C6148D000F4E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDD5C0F2C6148D000F4E222 /* ContentView.swift in Sources */,
+				CEDD5C112C6148D000F4E222 /* Item.swift in Sources */,
+				CEDD5C0D2C6148D000F4E222 /* NavanTestApp.swift in Sources */,
+				CEDD5C4F2C614C3700F4E222 /* Logger.swift in Sources */,
+				CEDD5C492C614BE700F4E222 /* Post.swift in Sources */,
+				CEDD5C3F2C614BA500F4E222 /* NetworkClient.swift in Sources */,
+				CEDD5C472C614BDB00F4E222 /* DefaultNetworkReachability.swift in Sources */,
+				CEDD5C4D2C614C1F00F4E222 /* PostViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C182C6148D400F4E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDD5C212C6148D400F4E222 /* NavanTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD5C222C6148D400F4E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDD5C2B2C6148D400F4E222 /* NavanTestUITests.swift in Sources */,
+				CEDD5C2D2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDD5C1E2C6148D400F4E222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDD5C082C6148D000F4E222 /* NavanTest */;
+			targetProxy = CEDD5C1D2C6148D400F4E222 /* PBXContainerItemProxy */;
+		};
+		CEDD5C282C6148D400F4E222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDD5C082C6148D000F4E222 /* NavanTest */;
+			targetProxy = CEDD5C272C6148D400F4E222 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEDD5C2E2C6148D400F4E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEDD5C2F2C6148D400F4E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CEDD5C312C6148D400F4E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NavanTest/NavanTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NavanTest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDD5C322C6148D400F4E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NavanTest/NavanTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NavanTest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEDD5C342C6148D400F4E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavanTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavanTest";
+			};
+			name = Debug;
+		};
+		CEDD5C352C6148D400F4E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavanTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavanTest";
+			};
+			name = Release;
+		};
+		CEDD5C372C6148D400F4E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NavanTest;
+			};
+			name = Debug;
+		};
+		CEDD5C382C6148D400F4E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NavanTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDD5C042C6148D000F4E222 /* Build configuration list for PBXProject "NavanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDD5C2E2C6148D400F4E222 /* Debug */,
+				CEDD5C2F2C6148D400F4E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDD5C302C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDD5C312C6148D400F4E222 /* Debug */,
+				CEDD5C322C6148D400F4E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDD5C332C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDD5C342C6148D400F4E222 /* Debug */,
+				CEDD5C352C6148D400F4E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDD5C362C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDD5C372C6148D400F4E222 /* Debug */,
+				CEDD5C382C6148D400F4E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEDD5C012C6148D000F4E222 /* Project object */;
+}
