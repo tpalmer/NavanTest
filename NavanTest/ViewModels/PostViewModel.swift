@@ -12,13 +12,16 @@ class PostViewModel: ObservableObject {
     @Published var posts: [Post] = []
     @Published var errorMessage: NetworkErrorMessage? = nil
     @Published var isConnected: Bool = false
+    @Published var isLoading: Bool = false
 
-    private var networkClient = NetworkClient()
-    private var reachability: DefaultNetworkReachability
+    var networkClient: NetworkClient
+    private var reachability: NetworkReachability
     private var cancellables: Set<AnyCancellable> = []
 
-    init() {
-        self.reachability = DefaultNetworkReachability()
+    // Allow dependency injection
+    init(networkClient: NetworkClient = NetworkClient(), reachability: NetworkReachability = DefaultNetworkReachability()) {
+        self.networkClient = networkClient
+        self.reachability = reachability
         setupNetworkMonitor()
         fetchPosts()
     }
@@ -30,8 +33,8 @@ class PostViewModel: ObservableObject {
                 self?.isConnected = isConnected
                 if !isConnected {
                     self?.updateErrorMessage("No Internet Connection")
-                } else {
-                    self?.updateErrorMessage(nil) // Clear error when connected
+                } else if self?.posts.isEmpty ?? true {
+                    // Fetch posts only if they haven't been loaded yet
                     self?.fetchPosts()
                 }
             }
@@ -44,12 +47,19 @@ class PostViewModel: ObservableObject {
             return
         }
 
+        isLoading = true
+
         networkClient.requestDecodable(from: "https://jsonplaceholder.typicode.com/posts", method: .GET) { [weak self] (result: Result<[Post], NetworkError>) in
             DispatchQueue.main.async {
+                self?.isLoading = false
                 switch result {
                 case .success(let posts):
                     self?.posts = posts
-                    self?.updateErrorMessage(nil) // Clear any previous error messages
+                    if posts.isEmpty {
+                        self?.updateErrorMessage("No posts available")
+                    } else {
+                        self?.updateErrorMessage(nil)
+                    }
                 case .failure(let error):
                     self?.handleError(error)
                 }
@@ -58,12 +68,10 @@ class PostViewModel: ObservableObject {
     }
 
     private func updateErrorMessage(_ message: String?) {
-        DispatchQueue.main.async {
-            if let message = message {
-                self.errorMessage = NetworkErrorMessage(message: message)
-            } else {
-                self.errorMessage = nil
-            }
+        if let message = message {
+            self.errorMessage = NetworkErrorMessage(message: message)
+        } else {
+            self.errorMessage = nil
         }
     }
 
@@ -71,7 +79,7 @@ class PostViewModel: ObservableObject {
         let message: String
         switch error {
         case .noNetwork:
-            message = "No network connection"
+            message = "No Internet Connection"
         case .invalidURL:
             message = "Invalid URL"
         case .invalidResponse:

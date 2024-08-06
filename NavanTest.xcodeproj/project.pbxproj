@@ -12,25 +12,23 @@
 		CEDD5C112C6148D000F4E222 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C102C6148D000F4E222 /* Item.swift */; };
 		CEDD5C132C6148D400F4E222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD5C122C6148D400F4E222 /* Assets.xcassets */; };
 		CEDD5C172C6148D400F4E222 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD5C162C6148D400F4E222 /* Preview Assets.xcassets */; };
-		CEDD5C212C6148D400F4E222 /* NavanTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */; };
-		CEDD5C2B2C6148D400F4E222 /* NavanTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */; };
-		CEDD5C2D2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */; };
 		CEDD5C3F2C614BA500F4E222 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C3E2C614BA500F4E222 /* NetworkClient.swift */; };
 		CEDD5C472C614BDB00F4E222 /* DefaultNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C462C614BDB00F4E222 /* DefaultNetworkReachability.swift */; };
 		CEDD5C492C614BE700F4E222 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C482C614BE700F4E222 /* Post.swift */; };
 		CEDD5C4D2C614C1F00F4E222 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C4C2C614C1F00F4E222 /* PostViewModel.swift */; };
 		CEDD5C4F2C614C3700F4E222 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C4E2C614C3700F4E222 /* Logger.swift */; };
+		CEDD5C542C61664700F4E222 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C532C61664700F4E222 /* NetworkClientTests.swift */; };
+		CEDD5C562C61665600F4E222 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C552C61665600F4E222 /* MockNetworkClient.swift */; };
+		CEDD5C582C61666400F4E222 /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C572C61666400F4E222 /* PostViewModelTests.swift */; };
+		CEDD5C5A2C61667300F4E222 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C592C61667300F4E222 /* MockURLSession.swift */; };
+		CEDD5C5C2C61668500F4E222 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C5B2C61668500F4E222 /* PostTests.swift */; };
+		CEDD5C5F2C61687D00F4E222 /* MockNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C5E2C61687D00F4E222 /* MockNetworkReachability.swift */; };
+		CEDD5C612C6170AD00F4E222 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C602C6170AD00F4E222 /* MockURLProtocol.swift */; };
+		CEDD5C632C6185AF00F4E222 /* MockPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD5C622C6185AF00F4E222 /* MockPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CEDD5C1D2C6148D400F4E222 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEDD5C012C6148D000F4E222 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEDD5C082C6148D000F4E222;
-			remoteInfo = NavanTest;
-		};
-		CEDD5C272C6148D400F4E222 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEDD5C012C6148D000F4E222 /* Project object */;
 			proxyType = 1;
@@ -48,15 +46,19 @@
 		CEDD5C142C6148D400F4E222 /* NavanTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavanTest.entitlements; sourceTree = "<group>"; };
 		CEDD5C162C6148D400F4E222 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavanTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestTests.swift; sourceTree = "<group>"; };
-		CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavanTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestUITests.swift; sourceTree = "<group>"; };
-		CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavanTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEDD5C3E2C614BA500F4E222 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CEDD5C462C614BDB00F4E222 /* DefaultNetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkReachability.swift; sourceTree = "<group>"; };
 		CEDD5C482C614BE700F4E222 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEDD5C4C2C614C1F00F4E222 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		CEDD5C4E2C614C3700F4E222 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CEDD5C532C61664700F4E222 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		CEDD5C552C61665600F4E222 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		CEDD5C572C61666400F4E222 /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
+		CEDD5C592C61667300F4E222 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		CEDD5C5B2C61668500F4E222 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		CEDD5C5E2C61687D00F4E222 /* MockNetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkReachability.swift; sourceTree = "<group>"; };
+		CEDD5C602C6170AD00F4E222 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		CEDD5C622C6185AF00F4E222 /* MockPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +76,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEDD5C232C6148D400F4E222 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,7 +84,6 @@
 			children = (
 				CEDD5C0B2C6148D000F4E222 /* NavanTest */,
 				CEDD5C1F2C6148D400F4E222 /* NavanTestTests */,
-				CEDD5C292C6148D400F4E222 /* NavanTestUITests */,
 				CEDD5C0A2C6148D000F4E222 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +93,6 @@
 			children = (
 				CEDD5C092C6148D000F4E222 /* NavanTest.app */,
 				CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */,
-				CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,12 +100,12 @@
 		CEDD5C0B2C6148D000F4E222 /* NavanTest */ = {
 			isa = PBXGroup;
 			children = (
-				CEDD5C3D2C614B8D00F4E222 /* Network */,
-				CEDD5C3C2C614B8400F4E222 /* Models */,
+				CEDD5C0C2C6148D000F4E222 /* NavanTestApp.swift */,
 				CEDD5C3B2C614B7C00F4E222 /* Views */,
 				CEDD5C3A2C614B7400F4E222 /* ViewModels */,
+				CEDD5C3C2C614B8400F4E222 /* Models */,
+				CEDD5C3D2C614B8D00F4E222 /* Network */,
 				CEDD5C392C614B6E00F4E222 /* Utilities */,
-				CEDD5C0C2C6148D000F4E222 /* NavanTestApp.swift */,
 				CEDD5C102C6148D000F4E222 /* Item.swift */,
 				CEDD5C122C6148D400F4E222 /* Assets.xcassets */,
 				CEDD5C142C6148D400F4E222 /* NavanTest.entitlements */,
@@ -132,18 +125,12 @@
 		CEDD5C1F2C6148D400F4E222 /* NavanTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEDD5C202C6148D400F4E222 /* NavanTestTests.swift */,
+				CEDD5C502C61661800F4E222 /* NetworkTests */,
+				CEDD5C512C61662100F4E222 /* ViewModelTests */,
+				CEDD5C522C61662F00F4E222 /* ModelTests */,
+				CEDD5C5D2C6166C900F4E222 /* Mocks */,
 			);
 			path = NavanTestTests;
-			sourceTree = "<group>";
-		};
-		CEDD5C292C6148D400F4E222 /* NavanTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CEDD5C2A2C6148D400F4E222 /* NavanTestUITests.swift */,
-				CEDD5C2C2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift */,
-			);
-			path = NavanTestUITests;
 			sourceTree = "<group>";
 		};
 		CEDD5C392C614B6E00F4E222 /* Utilities */ = {
@@ -187,6 +174,42 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		CEDD5C502C61661800F4E222 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C532C61664700F4E222 /* NetworkClientTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
+		CEDD5C512C61662100F4E222 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C572C61666400F4E222 /* PostViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		CEDD5C522C61662F00F4E222 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C5B2C61668500F4E222 /* PostTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		CEDD5C5D2C6166C900F4E222 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD5C552C61665600F4E222 /* MockNetworkClient.swift */,
+				CEDD5C592C61667300F4E222 /* MockURLSession.swift */,
+				CEDD5C5E2C61687D00F4E222 /* MockNetworkReachability.swift */,
+				CEDD5C602C6170AD00F4E222 /* MockURLProtocol.swift */,
+				CEDD5C622C6185AF00F4E222 /* MockPostViewModel.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,24 +248,6 @@
 			productReference = CEDD5C1C2C6148D400F4E222 /* NavanTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CEDD5C252C6148D400F4E222 /* NavanTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEDD5C362C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestUITests" */;
-			buildPhases = (
-				CEDD5C222C6148D400F4E222 /* Sources */,
-				CEDD5C232C6148D400F4E222 /* Frameworks */,
-				CEDD5C242C6148D400F4E222 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEDD5C282C6148D400F4E222 /* PBXTargetDependency */,
-			);
-			name = NavanTestUITests;
-			productName = NavanTestUITests;
-			productReference = CEDD5C262C6148D400F4E222 /* NavanTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,10 +262,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					CEDD5C1B2C6148D400F4E222 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = CEDD5C082C6148D000F4E222;
-					};
-					CEDD5C252C6148D400F4E222 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = CEDD5C082C6148D000F4E222;
 					};
@@ -281,7 +282,6 @@
 			targets = (
 				CEDD5C082C6148D000F4E222 /* NavanTest */,
 				CEDD5C1B2C6148D400F4E222 /* NavanTestTests */,
-				CEDD5C252C6148D400F4E222 /* NavanTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,13 +297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEDD5C1A2C6148D400F4E222 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEDD5C242C6148D400F4E222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,16 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDD5C212C6148D400F4E222 /* NavanTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEDD5C222C6148D400F4E222 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEDD5C2B2C6148D400F4E222 /* NavanTestUITests.swift in Sources */,
-				CEDD5C2D2C6148D400F4E222 /* NavanTestUITestsLaunchTests.swift in Sources */,
+				CEDD5C582C61666400F4E222 /* PostViewModelTests.swift in Sources */,
+				CEDD5C5F2C61687D00F4E222 /* MockNetworkReachability.swift in Sources */,
+				CEDD5C562C61665600F4E222 /* MockNetworkClient.swift in Sources */,
+				CEDD5C5A2C61667300F4E222 /* MockURLSession.swift in Sources */,
+				CEDD5C542C61664700F4E222 /* NetworkClientTests.swift in Sources */,
+				CEDD5C5C2C61668500F4E222 /* PostTests.swift in Sources */,
+				CEDD5C632C6185AF00F4E222 /* MockPostViewModel.swift in Sources */,
+				CEDD5C612C6170AD00F4E222 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,11 +343,6 @@
 			isa = PBXTargetDependency;
 			target = CEDD5C082C6148D000F4E222 /* NavanTest */;
 			targetProxy = CEDD5C1D2C6148D400F4E222 /* PBXContainerItemProxy */;
-		};
-		CEDD5C282C6148D400F4E222 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEDD5C082C6148D000F4E222 /* NavanTest */;
-			targetProxy = CEDD5C272C6148D400F4E222 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -591,48 +577,6 @@
 			};
 			name = Release;
 		};
-		CEDD5C372C6148D400F4E222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NavanTest;
-			};
-			name = Debug;
-		};
-		CEDD5C382C6148D400F4E222 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palmer.NavanTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NavanTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -659,15 +603,6 @@
 			buildConfigurations = (
 				CEDD5C342C6148D400F4E222 /* Debug */,
 				CEDD5C352C6148D400F4E222 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEDD5C362C6148D400F4E222 /* Build configuration list for PBXNativeTarget "NavanTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEDD5C372C6148D400F4E222 /* Debug */,
-				CEDD5C382C6148D400F4E222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,29 +14,59 @@ enum HTTPMethod: String {
 }
 
 // Define network errors
-enum NetworkError: Error {
+enum NetworkError: Error, Equatable {
     case invalidURL
     case invalidResponse
     case statusCodeError(Int)
     case noData
     case decodingError
     case noNetwork
+    
+    // Conformance to Equatable is automatic for enums without associated values
+    // Implement the conformance manually for cases with associated values
+    static func ==(lhs: NetworkError, rhs: NetworkError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidURL, .invalidURL):
+            return true
+        case (.invalidResponse, .invalidResponse):
+            return true
+        case (.statusCodeError(let lhsCode), .statusCodeError(let rhsCode)):
+            return lhsCode == rhsCode
+        case (.noData, .noData):
+            return true
+        case (.decodingError, .decodingError):
+            return true
+        case (.noNetwork, .noNetwork):
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 // Network client to perform API requests
 class NetworkClient {
     private let session: URLSession
     private var reachabilitySubscription: AnyCancellable?
-    private var isNetworkAvailable = false
+    let reachability: NetworkReachability
+    
+    var isNetworkAvailable: Bool {
+        return currentReachabilityValue()
+    }
 
     init(session: URLSession = .shared, reachability: NetworkReachability = DefaultNetworkReachability()) {
         self.session = session
+        self.reachability = reachability
+
+        // Maintain the subscription if other logic is necessary, or if you need to trigger side-effects
         self.reachabilitySubscription = reachability.isNetworkAvailable
-            .receive(on: DispatchQueue.main)
-            .sink(receiveValue: { [weak self] isAvailable in
-                self?.isNetworkAvailable = isAvailable
+            .sink(receiveValue: { isAvailable in
                 print("Network availability updated: \(isAvailable)")
             })
+    }
+    
+    private func currentReachabilityValue() -> Bool {
+        return false // Placeholder implementation
     }
 
     private func performRequest(with urlString: String, method: HTTPMethod, completion: @escaping (Result<Data, NetworkError>) -> Void) {
